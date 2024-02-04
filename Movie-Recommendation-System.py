@@ -7,7 +7,7 @@ def get_recommendations():
         
         select= combo_var.get()
         recommended_movie=[]
-        with open("E:/code/movie2.txt") as f:
+        with open("movie2.txt") as f:
                 l=f.readlines()
                 for r in l:
                         if r.find(select)!=-1:
@@ -45,7 +45,7 @@ def get_recommendations():
         recommendation_history.see(tk.END)
 root = tk.Tk()
 root.title("movie recommendation System")
-with open("E:/code/movie2.txt") as f:
+with open("movie2.txt") as f:
         l=f.readlines()
         movies=[]
         for r in l:
